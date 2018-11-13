@@ -1,0 +1,68 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;   
+}
+
+.container > div {
+    display: grid;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    border-radius: 10px;
+}
+
+.item1 {
+    grid-column: 1/4;
+
+}
+
+.item3 {
+    grid-column: 2/4;
+
+}
+
+.item7 {
+    grid-column: 1/4;
+}
+
+/* =========================== Larger Desktop View ========================= */
+
+@media only screen and (max-width:1440px){
+
+    .container > div {
+        background-color: yellow;
+    }
+}
+
+/* =========================== Tablet View ================================ */
+
+@media only screen and (max-width:768px){
+
+    .container > div {
+        background-color: blueviolet;
+    }
+}
+
+/* ============================= Mobile View =============================== */
+
+@media only screen and (max-width:425px){
+
+    .container {
+        /* display: grid; */
+        /* grid-template-columns: ; */
+        grid-gap: 15px; 
+    
+    }
+    
+    .container > div {
+        /* display: grid; */
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        border-radius: 10px;
+    }
+}
+
